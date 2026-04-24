@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --df-red: #e11b24;
+  --df-black: #000000;
+  --df-charcoal: #1a1a1a;
+  --df-footer: #2d2e32;
+  --df-white: #f8fafc;
+}
+
+@theme inline {
+  --color-df-red: var(--df-red);
+  --color-df-bg: var(--df-black);
+  --color-df-surface: var(--df-charcoal);
+  --color-df-footer: var(--df-footer);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-playfair);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--df-black);
+  color: var(--df-white);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
